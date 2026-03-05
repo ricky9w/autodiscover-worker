@@ -66,7 +66,7 @@ Edit `wrangler.jsonc` to add your environment variable and custom domain:
 ```jsonc
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "autodiscover-proxy",
+  "name": "autodiscover-worker",
   "main": "src/index.ts",
   "compatibility_date": "2025-04-01",
   "vars": {
@@ -92,7 +92,7 @@ pnpm run deploy
 Keep `wrangler.jsonc` as-is (with `keep_vars: true`) and configure everything in the Dashboard:
 
 1. Deploy the worker first: `pnpm run deploy`
-2. Go to **Workers & Pages → autodiscover-proxy → Settings**
+2. Go to **Workers & Pages → autodiscover-worker → Settings**
 3. **Variables and Secrets** → Add `UPSTREAM` with your mail service endpoint
 4. **Domains & Routes** → Add custom domain `autodiscover.example.com`
 

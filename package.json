@@ -1,5 +1,5 @@
 {
-	"name": "autodiscover-proxy",
+	"name": "autodiscover-worker",
 	"private": true,
 	"scripts": {
 		"dev": "wrangler dev",
