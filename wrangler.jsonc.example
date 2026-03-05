@@ -1,0 +1,15 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "autodiscover-proxy",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-04-01",
+	"vars": {
+		"UPSTREAM": "autodiscover-service.mail.us-west-2.awsapps.com"
+	},
+	"routes": [
+		{
+			"pattern": "autodiscover.example.com",
+			"custom_domain": true
+		}
+	]
+}
